@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:orientation="vertical">
+
+    <!--1st textView should be at the top-->
+    <!--2nd and 3rd textView should be at the center.-->
+    <!--3rd textView should be below the second textView-->
+    <!--4th textView should be at the bottom-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#ff2c2c"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="TextView1"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Text View 2"
+        android:id="@+id/tv2"/>
+
+    <TextView
+        android:layout_below="@id/tv2"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text View 3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="Text View 4"
+        android:gravity="center"/>
+
+</RelativeLayout>
